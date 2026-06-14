@@ -9,7 +9,20 @@
             "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/keiro-activate.sh\"",
             "commandWindows": "bash \"%CLAUDE_PLUGIN_ROOT%\\hooks\\keiro-activate.sh\"",
             "timeout": 5,
-            "statusMessage": "Loading Keiro MCP..."
+            "statusMessage": "⚡ Loading Keiro MCP..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/keiro-credit-tracker.sh\"",
+            "commandWindows": "bash \"%CLAUDE_PLUGIN_ROOT%\\hooks\\keiro-credit-tracker.sh\"",
+            "timeout": 3,
+            "statusMessage": "⚡ Keiro tracking..."
           }
         ]
       }
