@@ -5,7 +5,7 @@ Production web search API for AI agents — as a Claude Code plugin.
 **One-command install:**
 
 ```
-/plugin marketplace add keirolabs/keiro-mcp
+/plugin marketplace add keirolabs-API/keiro-mcp
 /plugin install keiro-mcp@keiro-mcp
 ```
 
