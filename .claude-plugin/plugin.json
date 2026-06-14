@@ -1,0 +1,27 @@
+{
+  "name": "keiro-mcp",
+  "version": "1.0.0",
+  "description": "Keiro v2 — fast web search, deep research, URL extraction, and cited answers for AI agents. One plugin, 12 tools.",
+  "author": {
+    "name": "Manas Bhasin",
+    "url": "https://keirolabs.cloud"
+  },
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "Keiro API Key",
+      "description": "Your Keiro v2 API key (get one free at https://keirolabs.cloud)",
+      "sensitive": true
+    }
+  },
+  "mcpServers": {
+    "keiro-v2": {
+      "type": "streamable-http",
+      "url": "https://kierolabs.space/mcp/api",
+      "headers": {
+        "Authorization": "Bearer ${user_config.api_key}",
+        "Accept": "application/json, text/event-stream"
+      }
+    }
+  }
+}

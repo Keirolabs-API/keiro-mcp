@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "keiro-mcp",
+  "description": "Keiro v2 web search API — fast search, deep research, URL extraction, and cited answers. One plugin install, all 12 MCP tools available.",
+  "owner": {
+    "name": "Manas Bhasin",
+    "url": "https://keirolabs.cloud"
+  },
+  "plugins": [
+    {
+      "name": "keiro-mcp",
+      "description": "Production web search API for AI agents. Fast search, deep research, extraction, and answers — v2 endpoints only.",
+      "source": "./",
+      "category": "developer-tools"
+    }
+  ]
+}
